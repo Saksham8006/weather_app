@@ -11,6 +11,8 @@ const App = () => {
   const API_KEY = 'abcb369b121fe222dd4ed2c879c8ea83';
   const defaultCities = ['Delhi', 'Mumbai', 'Kolkata', 'Chennai', 'Bangalore', 'Noida', 'Pune', 'Hyderabad'];
 
+  console.log("cities", defaultCities)
+
   useEffect(() => {
     getWeather(defaultCities[0]);
     getForecast(defaultCities[0]);
